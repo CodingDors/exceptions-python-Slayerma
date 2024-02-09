@@ -59,13 +59,13 @@ def divide(num1, num2):
     """
     # TODO: Implement this function.
     pass
-    try:
+     try:
         result = float(num1) / float(num2)
         return result
     except ValueError:
         raise ValueError("Invalid input. Please provide valid numbers.")
     except ZeroDivisionError:
-        raise ValueError("Cannot divide by zero.")
+        raise ZeroDivisionError("Cannot divide by zero.")
 
 def driver():
     while True:
