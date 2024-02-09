@@ -64,7 +64,8 @@ def divide(num1, num2):
         return result
     except ValueError:
         raise ValueError("Invalid input. Please provide valid numbers.")
-    
+    except ZeroDivisionError:
+        raise ValueError("Cannot divide by zero.")
 
 def driver():
     while True:
