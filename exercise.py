@@ -62,6 +62,8 @@ def divide(num1, num2):
     try:
         result = float(num1) / float(num2)
         return result
+    except ValueError:
+        raise ValueError("Invalid input. Please provide valid numbers.")    
     except ZeroDivisionError:
         raise ZeroDivisionError("Cannot divide by zero.")
 
